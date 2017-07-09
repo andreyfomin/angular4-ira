@@ -7,6 +7,7 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { ListtestComponent } from './listtest/listtest.component';
 import { ListradioComponent } from './listradio/listradio.component';
+import { ListbuttonsComponent } from './listbuttons/listbuttons.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListradioComponent } from './listradio/listradio.component';
     ChildComponent,
     ParentComponent,
     ListtestComponent,
-    ListradioComponent
+    ListradioComponent,
+    ListbuttonsComponent
 ],
   imports: [
     BrowserModule
