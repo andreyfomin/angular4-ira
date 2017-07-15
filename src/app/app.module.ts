@@ -10,6 +10,7 @@ import { ListradioComponent } from './listradio/listradio.component';
 import { ListbuttonsComponent } from './listbuttons/listbuttons.component';
 import { IfLogicComponent } from './IfLogic/IfLogic.component';
 import { SVGMouseMoveComponent } from './SVGMouseMove/SVGMouseMove.component';
+import { MouseEventsComponent } from './MouseEvents/MouseEvents.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SVGMouseMoveComponent } from './SVGMouseMove/SVGMouseMove.component';
     ListradioComponent,
     ListbuttonsComponent,
     IfLogicComponent,
-    SVGMouseMoveComponent
+    SVGMouseMoveComponent,
+    MouseEventsComponent
 ],
   imports: [
     BrowserModule
