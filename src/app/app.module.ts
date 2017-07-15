@@ -8,6 +8,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ListtestComponent } from './listtest/listtest.component';
 import { ListradioComponent } from './listradio/listradio.component';
 import { ListbuttonsComponent } from './listbuttons/listbuttons.component';
+import { IfLogicComponent } from './IfLogic/IfLogic.component';
+import { SVGMouseMoveComponent } from './SVGMouseMove/SVGMouseMove.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,11 @@ import { ListbuttonsComponent } from './listbuttons/listbuttons.component';
     StudentComponent,
     ChildComponent,
     ParentComponent,
-    ListtestComponent,
+    ListtestComponent,
     ListradioComponent,
-    ListbuttonsComponent
+    ListbuttonsComponent,
+    IfLogicComponent,
+    SVGMouseMoveComponent
 ],
   imports: [
     BrowserModule

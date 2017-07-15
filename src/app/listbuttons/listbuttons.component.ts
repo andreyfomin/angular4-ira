@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-listbuttons',
   template: `
     <div>
-    <input #fname>
+      <input #fname>
       <button (click)="clickMe(fname.value)">
         ClickMe
       </button>
@@ -37,14 +37,5 @@ export class ListbuttonsComponent implements OnInit {
   clickMe(user) {
     console.log('new user = ' + user);
     this.users.push(user);
-    // if (user is non-null) {
-    //   if (user is duplicated) {
-    //     // display alert message
-    //   } else {
-    //     // display alert message
-    //   }
-    // } else {
-    //   // display alert message
-    // }
   }
 }
