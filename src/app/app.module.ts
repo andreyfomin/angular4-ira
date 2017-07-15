@@ -11,6 +11,10 @@ import { ListbuttonsComponent } from './listbuttons/listbuttons.component';
 import { IfLogicComponent } from './IfLogic/IfLogic.component';
 import { SVGMouseMoveComponent } from './SVGMouseMove/SVGMouseMove.component';
 import { MouseEventsComponent } from './MouseEvents/MouseEvents.component';
+import { ToDoExampleComponent } from './ToDoExample/ToDoExample.component';
+import { TodoInputComponent } from './ToDoExample/TodoInput/TodoInput.component';
+import { ToDoListComponent } from './ToDoExample/ToDoList/ToDoList.component';
+import { TodoService } from './ToDoExample/Todo.service';
 
 @NgModule({
   declarations: [
@@ -21,14 +25,17 @@ import { MouseEventsComponent } from './MouseEvents/MouseEvents.component';
     ListtestComponent,
     ListradioComponent,
     ListbuttonsComponent,
-    IfLogicComponent,
+    IfLogicComponent,
     SVGMouseMoveComponent,
-    MouseEventsComponent
-],
+    MouseEventsComponent,
+    ToDoExampleComponent,
+    TodoInputComponent,
+    ToDoListComponent
+  ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
