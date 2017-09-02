@@ -15,6 +15,7 @@ import { ToDoExampleComponent } from './ToDoExample/ToDoExample.component';
 import { TodoInputComponent } from './ToDoExample/TodoInput/TodoInput.component';
 import { ToDoListComponent } from './ToDoExample/ToDoList/ToDoList.component';
 import { TodoService } from './ToDoExample/Todo.service';
+import { FlickrComponent } from './flickr/flickr.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TodoService } from './ToDoExample/Todo.service';
     MouseEventsComponent,
     ToDoExampleComponent,
     TodoInputComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    FlickrComponent
   ],
   imports: [
     BrowserModule
