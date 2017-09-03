@@ -20,6 +20,8 @@ import { FlickrComponent } from './flickr/flickr.component';
 import { ReadJSONFileComponent } from './read-jsonfile/read-jsonfile.component';
 import { SearchNYTComponent } from './search-nyt/search-nyt.component';
 import { NYTService } from './search-nyt/nyt.service';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
+import { FileService } from './fork-join/file.service';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,14 @@ import { NYTService } from './search-nyt/nyt.service';
     ToDoListComponent,
     FlickrComponent,
     ReadJSONFileComponent,
-    SearchNYTComponent
+    SearchNYTComponent,
+    ForkJoinComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
-  providers: [TodoService, NYTService],
+  providers: [TodoService, NYTService, FileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
