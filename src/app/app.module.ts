@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
@@ -16,6 +17,7 @@ import { TodoInputComponent } from './ToDoExample/TodoInput/TodoInput.component'
 import { ToDoListComponent } from './ToDoExample/ToDoList/ToDoList.component';
 import { TodoService } from './ToDoExample/Todo.service';
 import { FlickrComponent } from './flickr/flickr.component';
+import { ReadJSONFileComponent } from './read-jsonfile/read-jsonfile.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +34,12 @@ import { FlickrComponent } from './flickr/flickr.component';
     ToDoExampleComponent,
     TodoInputComponent,
     ToDoListComponent,
-    FlickrComponent
+    FlickrComponent,
+    ReadJSONFileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]

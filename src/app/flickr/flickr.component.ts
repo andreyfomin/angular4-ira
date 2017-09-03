@@ -3,8 +3,16 @@ import $ from 'jquery';
 
 @Component({
   selector: 'app-flickr',
-  templateUrl: './flickr.component.html',
-  styleUrls: ['./flickr.component.css']
+  template: `
+    <div>
+      <button (click)="httpRequest()">Get Users</button>
+      <ul>
+        <li *ngFor="let user of users">
+          {{user.name}}
+        </li>
+      </ul>
+    </div>
+  `
 })
 export class FlickrComponent implements OnInit {
 
