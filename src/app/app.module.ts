@@ -18,6 +18,8 @@ import { ToDoListComponent } from './ToDoExample/ToDoList/ToDoList.component';
 import { TodoService } from './ToDoExample/Todo.service';
 import { FlickrComponent } from './flickr/flickr.component';
 import { ReadJSONFileComponent } from './read-jsonfile/read-jsonfile.component';
+import { SearchNYTComponent } from './search-nyt/search-nyt.component';
+import { NYTService } from './search-nyt/nyt.service';
 
 @NgModule({
   declarations: [
@@ -35,13 +37,14 @@ import { ReadJSONFileComponent } from './read-jsonfile/read-jsonfile.component';
     TodoInputComponent,
     ToDoListComponent,
     FlickrComponent,
-    ReadJSONFileComponent
+    ReadJSONFileComponent,
+    SearchNYTComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
-  providers: [TodoService],
+  providers: [TodoService, NYTService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
