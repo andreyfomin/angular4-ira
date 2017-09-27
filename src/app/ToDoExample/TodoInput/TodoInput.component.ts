@@ -18,7 +18,7 @@ export class TodoInputComponent implements OnInit {
 
   mouseEvent(value) {
     if ((value != null) && (value.length > 0)) {
-      this.todoService.todos.push(value);
+      this.todoService.todos.push({name: value});
       console.log('todos: ' + this.todoService.todos);
     } else {
       console.log('value must be non-null');

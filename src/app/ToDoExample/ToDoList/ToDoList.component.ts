@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     <div>
       <ul>
         <li *ngFor="let todo of todoService.todos">
-          {{todo}}
+          {{todo.name}}
         </li>
       </ul>
     </div>

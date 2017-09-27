@@ -1,7 +1,7 @@
-import express from 'express';
-import path from 'path';
-import bodyParser from 'body-parser';
-import livereload from 'connect-livereload';
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+const livereload = ('connect-livereload');
 
 const users = require('./models/users');
 const employees = require('./models/employees');
@@ -12,7 +12,6 @@ let app = express();
 app.use(livereload({
     port: 35729
   }));
-
 app.use(express.static(path.join(__dirname, '../dist')));
 
 app.use(bodyParser.urlencoded({extended: true}));
