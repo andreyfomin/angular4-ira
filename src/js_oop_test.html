@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // 'use strict';
+
+  var name = 78;
+
+  a = 20;
+
+  function Animal(name) {
+
+    this.name = name;
+    this.speed = 0;
+//    this.print = function () {
+//      console.log(this.name);
+//    };
+  }
+
+  Animal.prototype.print = function () {
+    console.log(this.name);
+  };
+
+  Animal();
+
+  var b = new Animal('ffffff');
+  var b2 = new Animal('333333');
+
+  Animal();
+
+  console.log(b);
+  b.print();
+  b2.print();
+
+
+  var obj = {
+    x: 5,
+    print: function () {
+      console.log(this.x);
+    }
+  };
+
+  obj.print();
+  obj.x = 10;
+  obj.dd = 30;
+  obj.print();
+</script>
+</body>
+</html>
